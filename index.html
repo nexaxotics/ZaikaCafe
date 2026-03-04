@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ZaikaCafé — Authentic Indian Flavours, Crafted with Love</title>
+  <meta name="description" content="ZaikaCafé is a cosy Indian café serving authentic desi flavours — from sizzling starters to rich curries and sweet endings. Reserve your table today." />
+  <meta name="theme-color" content="#7C2D12" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%237C2D12'/%3E%3Ctext x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-size='36' font-family='serif'%3E%F0%9F%8D%9B%3C/text%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <!-- Logo -->
+      <a href="#" class="logo">
+        <div class="logo-icon">
+          <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="19" cy="19" r="19" fill="#2B5F3E"/>
+            <path d="M12 24 Q15 14 19 12 Q23 14 26 24" stroke="#D4A843" stroke-width="2" fill="none" stroke-linecap="round"/>
+            <ellipse cx="19" cy="26" rx="7" ry="3" fill="#D4A843" opacity="0.9"/>
+            <path d="M16 20 Q19 16 22 20" stroke="#fff" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <span class="logo-text">Zaika<strong>Café</strong></span>
+      </a>
+
+      <!-- Nav Links -->
+      <nav class="nav-links" id="navLinks">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#menu" class="nav-link">Menu</a>
+        <a href="#about" class="nav-link">About us</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Right Controls -->
+      <div class="nav-right">
+        <button class="icon-btn" aria-label="Search">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+          </svg>
+        </button>
+        <a href="#reservation" class="btn btn-primary nav-cta">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+          Order now
+        </a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile menu backdrop -->
+  <div class="nav-backdrop" id="navBackdrop" aria-hidden="true"></div>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="home">
+    <div class="hero-bg-decor">
+      <div class="leaf leaf-1">
+        <svg width="90" height="90" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg>
+      </div>
+      <div class="leaf leaf-2">
+        <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg>
+      </div>
+    </div>
+    <div class="container hero-inner">
+      <!-- Left Content -->
+      <div class="hero-content" data-aos="fade-right">
+        <h1 class="hero-title">
+          Ghar Jaisa <span class="accent">Swad</span><br>
+          Dil Se <span class="accent">Banaya</span><br>
+          Aapke Liye
+        </h1>
+        <p class="hero-subtitle">Authentic Indian flavours served with<br>warmth, spice, and a whole lot of love.</p>
+        <div class="hero-actions">
+          <a href="#menu" class="btn btn-primary hero-btn">View Menu <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m7 17 10-10M7 7h10v10"/></svg></a>
+          <a href="#reservation" class="btn btn-outline hero-btn">Reserve a Table</a>
+        </div>
+      </div>
+
+      <!-- Center Food Image -->
+      <div class="hero-image-wrap" data-aos="fade-up">
+        <div class="hero-image-ring">
+          <img src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=600&q=85" alt="Signature Indian Dish" class="hero-img" />
+        </div>
+        <div class="floating-badge badge-top-right">
+          <span class="badge-star"><svg width="20" height="20" viewBox="0 0 24 24" fill="#D4A843"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></span>
+          <div><strong>4.9</strong><br><small>Rating</small></div>
+        </div>
+        <div class="floating-badge badge-bottom-left">
+          <span class="badge-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2B5F3E" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"/><path d="M7 2v20"/><path d="M21 15V2a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3v7"/></svg></span>
+          <div><strong>200+</strong><br><small>Dishes</small></div>
+        </div>
+      </div>
+
+      <!-- Right Stats -->
+      <div class="hero-stats" data-aos="fade-left">
+        <div class="stat-card">
+          <span class="stat-num">15+</span>
+          <span class="stat-label">Years Experience</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-num">50k+</span>
+          <span class="stat-label">Happy Customers</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-num">100%</span>
+          <span class="stat-label">Authentic Recipes</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Featured Dishes Strip -->
+    <div class="featured-strip">
+      <div class="container">
+        <div class="featured-dishes">
+          <div class="dish-card featured-card">
+            <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?w=120&q=80" alt="Samosa" />
+            <div class="dish-info">
+              <div class="dish-rating"><span class="star"><svg width="12" height="12" viewBox="0 0 24 24" fill="#D4A843"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></span> 4.8</div>
+              <div class="dish-name">Samosa</div>
+              <div class="dish-price">&#8377;129</div>
+            </div>
+          </div>
+          <div class="dish-card featured-card">
+            <img src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=120&q=80" alt="Paneer Tikka" />
+            <div class="dish-info">
+              <div class="dish-rating"><span class="star"><svg width="12" height="12" viewBox="0 0 24 24" fill="#D4A843"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></span> 4.9</div>
+              <div class="dish-name">Paneer Tikka</div>
+              <div class="dish-price">&#8377;249</div>
+            </div>
+          </div>
+          <div class="dish-card featured-card">
+            <img src="https://images.unsplash.com/photo-1561336313-0bd5e0b27ec8?w=120&q=80" alt="Masala Chai" />
+            <div class="dish-info">
+              <div class="dish-rating"><span class="star"><svg width="12" height="12" viewBox="0 0 24 24" fill="#D4A843"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></span> 4.9</div>
+              <div class="dish-name">Masala Chai</div>
+              <div class="dish-price">&#8377;69</div>
+            </div>
+          </div>
+          <div class="dish-card featured-card">
+            <img src="https://images.unsplash.com/photo-1630383249896-424e482df921?w=120&q=80" alt="Masala Dosa" />
+            <div class="dish-info">
+              <div class="dish-rating"><span class="star"><svg width="12" height="12" viewBox="0 0 24 24" fill="#D4A843"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></span> 4.7</div>
+              <div class="dish-name">Masala Dosa</div>
+              <div class="dish-price">&#8377;149</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT US ===== -->
+  <section class="about section" id="about">
+    <div class="container about-inner">
+      <!-- Left: Restaurant Image -->
+      <div class="about-image-wrap" data-aos="fade-right">
+        <div class="about-img-frame">
+          <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&q=80" alt="Our Restaurant" class="about-img" />
+          <button class="play-btn" aria-label="Play video">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Right: Content -->
+      <div class="about-content" data-aos="fade-left">
+        <span class="section-label">About Us</span>
+        <h2 class="section-title">We invite you to<br>visit our restaurant</h2>
+        <p class="about-text">Welcome to Our Restaurant, where every dish tells a story and every moment is crafted with care. We are passionate about creating memorable dining experiences through exceptional food, warm hospitality, and a cozy ambiance that makes you feel right at home.</p>
+        <div class="about-features">
+          <div class="about-feature">
+            <div class="feature-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#D4A843" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 20h10"/><path d="M10 20c5.5-2.5.8-6.4 3-10"/><path d="M9.5 9.4c1.1.8 1.8 2.2 2.3 3.7-2 .4-3.5.4-4.8-.3-1.2-.6-2.3-1.9-3-4.2 2.8-.5 4.4 0 5.5.8z"/><path d="M14.1 6a7 7 0 0 1 5.1 8c-1.6.1-3.2-.4-4.4-1C14 12.4 14 11 14 9.5a7 7 0 0 1 .1-3.5z"/></svg></div>
+            <div><strong>100% Organic</strong><p>Fresh & natural ingredients daily</p></div>
+          </div>
+          <div class="about-feature">
+            <div class="feature-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#D4A843" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 13.87A4 4 0 0 1 7.41 6a5.11 5.11 0 0 1 1.05-1.54 5 5 0 0 1 7.08 0A5.11 5.11 0 0 1 16.59 6 4 4 0 0 1 18 13.87V21H6Z"/><line x1="6" x2="18" y1="17" y2="17"/></svg></div>
+            <div><strong>Expert Chefs</strong><p>15+ years culinary experience</p></div>
+          </div>
+          <div class="about-feature">
+            <div class="feature-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#D4A843" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 18H3c-.6 0-1-.4-1-1V7c0-.6.4-1 1-1h10c.6 0 1 .4 1 1v11"/><path d="M14 9h4l4 4v4h-8V9z"/><circle cx="7" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></svg></div>
+            <div><strong>Fast Delivery</strong><p>Delivered fresh to your door</p></div>
+          </div>
+          <div class="about-feature">
+            <div class="feature-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#D4A843" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg></div>
+            <div><strong>Top Rated</strong><p>4.9/5 by 50,000+ customers</p></div>
+          </div>
+        </div>
+        <a href="#reservation" class="btn btn-primary">Book a Table <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m7 17 10-10M7 7h10v10"/></svg></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== OUR MENU ===== -->
+  <section class="menu section" id="menu">
+    <div class="menu-bg-blob"></div>
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-label">Our Menu</span>
+        <h2 class="section-title">Our Special Dishes</h2>
+        <p class="section-subtitle">Bold spices, slow-cooked curries, and sweet endings — explore India’s finest on every plate</p>
+      </div>
+
+      <!-- Category Tabs -->
+      <div class="menu-tabs" data-aos="fade-up">
+        <button class="tab-btn active" data-tab="all">All</button>
+        <button class="tab-btn" data-tab="starters">Starters</button>
+        <button class="tab-btn" data-tab="mains">Main Course</button>
+        <button class="tab-btn" data-tab="salads">Chaats</button>
+        <button class="tab-btn" data-tab="desserts">Meetha</button>
+      </div>
+
+      <!-- Menu Grid -->
+      <div class="menu-grid" id="menuGrid" data-aos="fade-up">
+        <div class="menu-item-card" data-category="starters">
+          <div class="menu-item-img-wrap">
+            <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?w=400&q=80" alt="Samosa Chaat" loading="lazy" />
+            <div class="card-img-gradient"></div>
+            <span class="menu-badge">Popular</span>
+          </div>
+          <div class="menu-item-info">
+            <div class="menu-item-top">
+              <div class="dish-title-row">
+                <span class="veg-dot veg" title="Vegetarian"></span>
+                <h3>Samosa Chaat</h3>
+              </div>
+              <span class="menu-price">&#8377;129</span>
+            </div>
+            <p>Crispy golden samosas topped with chickpeas, tangy tamarind chutney, and fresh sev.</p>
+            <div class="card-divider"></div>
+            <div class="menu-item-footer">
+              <span class="menu-rating"><svg width="12" height="12" viewBox="0 0 24 24" fill="#D4A843"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg> 4.8</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-item-card" data-category="mains">
+          <div class="menu-item-img-wrap">
+            <img src="https://images.unsplash.com/photo-1588166524941-3bf61a9c41db?w=400&q=80" alt="Butter Chicken" loading="lazy" />
+            <div class="card-img-gradient"></div>
+            <span class="menu-badge badge-new">New</span>
+          </div>
+          <div class="menu-item-info">
+            <div class="menu-item-top">
+              <div class="dish-title-row">
+                <span class="veg-dot nonveg" title="Non-Vegetarian"></span>
+                <h3>Butter Chicken</h3>
+              </div>
+              <span class="menu-price">&#8377;349</span>
+            </div>
+            <p>Tender chicken in a velvety tomato-butter-cream gravy, mildly spiced and richly aromatic.</p>
+            <div class="card-divider"></div>
+            <div class="menu-item-footer">
+              <span class="menu-rating"><svg width="12" height="12" viewBox="0 0 24 24" fill="#D4A843"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg> 4.9</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-item-card" data-category="salads">
+          <div class="menu-item-img-wrap">
+            <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=400&q=80" alt="Kachumber Salad" loading="lazy" />
+            <div class="card-img-gradient"></div>
+          </div>
+          <div class="menu-item-info">
+            <div class="menu-item-top">
+              <div class="dish-title-row">
+                <span class="veg-dot veg" title="Vegetarian"></span>
+                <h3>Kachumber Salad</h3>
+              </div>
+              <span class="menu-price">&#8377;149</span>
+            </div>
+            <p>Finely diced cucumber, tomato and onion tossed with chaat masala and a squeeze of fresh lime.</p>
+            <div class="card-divider"></div>
+            <div class="menu-item-footer">
+              <span class="menu-rating"><svg width="12" height="12" viewBox="0 0 24 24" fill="#D4A843"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg> 4.7</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-item-card" data-category="mains">
+          <div class="menu-item-img-wrap">
+            <img src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=400&q=80" alt="Dum Biryani" loading="lazy" />
+            <div class="card-img-gradient"></div>
+            <span class="menu-badge">Chef's Pick</span>
+          </div>
+          <div class="menu-item-info">
+            <div class="menu-item-top">
+              <div class="dish-title-row">
+                <span class="veg-dot nonveg" title="Non-Vegetarian"></span>
+                <h3>Dum Biryani</h3>
+              </div>
+              <span class="menu-price">&#8377;399</span>
+            </div>
+            <p>Fragrant basmati rice slow-cooked with spiced meat, saffron strands, and crispy fried onions.</p>
+            <div class="card-divider"></div>
+            <div class="menu-item-footer">
+              <span class="menu-rating"><svg width="12" height="12" viewBox="0 0 24 24" fill="#D4A843"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg> 4.9</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-item-card" data-category="starters">
+          <div class="menu-item-img-wrap">
+            <img src="https://images.unsplash.com/photo-1547592166-23ac45744acd?w=400&q=80" alt="Dal Tadka" loading="lazy" />
+            <div class="card-img-gradient"></div>
+          </div>
+          <div class="menu-item-info">
+            <div class="menu-item-top">
+              <div class="dish-title-row">
+                <span class="veg-dot veg" title="Vegetarian"></span>
+                <h3>Dal Tadka</h3>
+              </div>
+              <span class="menu-price">&#8377;179</span>
+            </div>
+            <p>Yellow lentils tempered with ghee, cumin, garlic, and dried red chilli — served with hot naan.</p>
+            <div class="card-divider"></div>
+            <div class="menu-item-footer">
+              <span class="menu-rating"><svg width="12" height="12" viewBox="0 0 24 24" fill="#D4A843"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg> 4.6</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-item-card" data-category="desserts">
+          <div class="menu-item-img-wrap">
+            <img src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=400&q=80" alt="Gulab Jamun" loading="lazy" />
+            <div class="card-img-gradient"></div>
+            <span class="menu-badge badge-new">New</span>
+          </div>
+          <div class="menu-item-info">
+            <div class="menu-item-top">
+              <div class="dish-title-row">
+                <span class="veg-dot veg" title="Vegetarian"></span>
+                <h3>Gulab Jamun</h3>
+              </div>
+              <span class="menu-price">&#8377;99</span>
+            </div>
+            <p>Soft milk-solid dumplings soaked in warm rose-flavoured sugar syrup, served with ice cream.</p>
+            <div class="card-divider"></div>
+            <div class="menu-item-footer">
+              <span class="menu-rating"><svg width="12" height="12" viewBox="0 0 24 24" fill="#D4A843"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg> 4.8</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-cta" data-aos="fade-up">
+        <a href="#" class="btn btn-outline-white">Explore All Menu <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m7 17 10-10M7 7h10v10"/></svg></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CHEF / TEAM ===== -->
+  <section class="chef section">
+    <div class="chef-bg"></div>
+    <div class="container chef-inner">
+      <div class="chef-content" data-aos="fade-right">
+        <span class="section-label light">Our Team</span>
+        <h2 class="section-title light">The Hands Behind<br>Every Flavour</h2>
+        <div class="testimonial-card" id="chefTestimonial">
+          <div class="testimonial-author">
+            <img src="https://images.unsplash.com/photo-1607631568010-a87245c0daf8?w=80&q=80" alt="Rajan Sharma" />
+            <div>
+              <strong>Rajan Sharma</strong>
+              <span>Head Chef &amp; Founder</span>
+            </div>
+          </div>
+          <p>"Indian cuisine is a love language — every spice tells a story, every dish carries a memory that lives in the heart."</p>
+          <div class="testimonial-nav">
+            <button class="nav-arrow prev-arrow" id="prevTestimonial" aria-label="Previous"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg></button>
+            <button class="nav-arrow next-arrow" id="nextTestimonial" aria-label="Next"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg></button>
+          </div>
+        </div>
+      </div>
+      <div class="chef-image-wrap" data-aos="fade-left">
+        <img src="https://images.unsplash.com/photo-1581299894007-aaa50297cf16?w=600&q=80" alt="Our Head Chef" class="chef-img" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES ===== -->
+  <section class="services section" id="services">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-label">Special Service</span>
+        <h2 class="section-title dark">Our Services</h2>
+        <p class="section-subtitle dark">From a steaming cup of morning chai to a lavish dinner feast — we serve joy at every hour of the day.</p>
+      </div>
+      <div class="services-grid" data-aos="fade-up">
+        <div class="service-card">
+          <div class="service-icon">
+            <svg width="48" height="48" viewBox="0 0 64 64" fill="none" stroke="#2B3A2E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="32" cy="22" r="10"/><path d="M18 46c0-7.7 6.3-14 14-14s14 6.3 14 14"/>
+              <path d="M24 30 Q32 34 40 30"/><circle cx="32" cy="22" r="4" fill="#D4A843" stroke="none"/>
+            </svg>
+          </div>
+          <h3>Morning Chai</h3>
+          <p>Start your day the desi way. Our masala chai and fresh nashta will warm your soul every morning.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <svg width="48" height="48" viewBox="0 0 64 64" fill="none" stroke="#2B3A2E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="12" y="28" width="40" height="6" rx="2"/><path d="M16 28v-6a16 16 0 0 1 32 0v6"/>
+              <path d="M20 46h24M32 34v12"/><circle cx="46" cy="16" r="4" fill="#D4A843" stroke="none"/>
+            </svg>
+          </div>
+          <h3>Lunch Thali</h3>
+          <p>A wholesome thali with dal, sabzi, roti, rice, and a sweet ending — because a real meal is a complete one.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <svg width="48" height="48" viewBox="0 0 64 64" fill="none" stroke="#2B3A2E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M16 20h32v4a16 16 0 0 1-32 0v-4z"/><path d="M12 20h40"/><path d="M28 44h8M32 40v4"/>
+              <path d="M20 44h24M24 20v-8a8 8 0 0 1 16 0v8"/>
+              <circle cx="32" cy="12" r="3" fill="#D4A843" stroke="none"/>
+            </svg>
+          </div>
+          <h3>Dinner Feast</h3>
+          <p>End your day with a rich, aromatic dinner — slow-cooked curries, fresh breads, and royal desserts.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <svg width="48" height="48" viewBox="0 0 64 64" fill="none" stroke="#2B3A2E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20 44V28M44 44V28"/><path d="M14 28h36"/><path d="M32 28V16"/>
+              <path d="M24 16h16M28 20v-4M36 20v-4"/><circle cx="32" cy="12" r="4" fill="#D4A843" stroke="none"/>
+            </svg>
+          </div>
+          <h3>Catering</h3>
+          <p>Weddings, festivals, or corporate events — let our chefs bring the spirit of Indian cooking to your celebrations.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <section class="testimonials section">
+    <div class="testimonials-bg"></div>
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-label light">Testimonials</span>
+        <h2 class="section-title light">What Our Visitors Say</h2>
+      </div>
+      <div class="testimonials-slider" data-aos="fade-up">
+        <div class="testimonials-overflow">
+          <div class="testimonials-track" id="testimonialsTrack">
+            <!-- Original set -->
+            <div class="testimonial-review-card">
+              <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=80&q=80" alt="Priya S." class="reviewer-img"/>
+              <p>"The Dal Makhani took me straight back to my mother's kitchen. Pure comfort every single time!"</p>
+              <div class="reviewer-name">Priya S.</div>
+              <div class="stars"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+            </div>
+            <div class="testimonial-review-card">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&q=80" alt="Rahul M." class="reviewer-img"/>
+              <p>"Best Biryani in the city — fragrant, layered, and absolutely unreal. I dream about it!"</p>
+              <div class="reviewer-name">Rahul M.</div>
+              <div class="stars"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+            </div>
+            <div class="testimonial-review-card">
+              <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=80&q=80" alt="Ananya K." class="reviewer-img"/>
+              <p>"Masala chai and samosas here are a daily ritual now. I simply cannot go a morning without them!"</p>
+              <div class="reviewer-name">Ananya K.</div>
+              <div class="stars"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+            </div>
+            <div class="testimonial-review-card">
+              <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=80&q=80" alt="Vikram R." class="reviewer-img"/>
+              <p>"The Butter Chicken gravy was so rich and flavourful — I mopped every last drop with naan. Perfection!"</p>
+              <div class="reviewer-name">Vikram R.</div>
+              <div class="stars"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+            </div>
+            <div class="testimonial-review-card">
+              <img src="https://images.unsplash.com/photo-1519345182560-3f2917c472ef?w=80&q=80" alt="Meera T." class="reviewer-img"/>
+              <p>"From the warm decor to the Gulab Jamun, ZaikaCafé is pure desi soul. I keep coming back for more!"</p>
+              <div class="reviewer-name">Meera T.</div>
+              <div class="stars"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+            </div>
+            <!-- Duplicate set for seamless loop -->
+            <div class="testimonial-review-card" aria-hidden="true">
+              <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=80&q=80" alt="" class="reviewer-img"/>
+              <p>"The Dal Makhani took me straight back to my mother's kitchen. Pure comfort every single time!"</p>
+              <div class="reviewer-name">Priya S.</div>
+              <div class="stars"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+            </div>
+            <div class="testimonial-review-card" aria-hidden="true">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&q=80" alt="" class="reviewer-img"/>
+              <p>"Best Biryani in the city — fragrant, layered, and absolutely unreal. I dream about it!"</p>
+              <div class="reviewer-name">Rahul M.</div>
+              <div class="stars"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+            </div>
+            <div class="testimonial-review-card" aria-hidden="true">
+              <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=80&q=80" alt="" class="reviewer-img"/>
+              <p>"Masala chai and samosas here are a daily ritual now. I simply cannot go a morning without them!"</p>
+              <div class="reviewer-name">Ananya K.</div>
+              <div class="stars"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+            </div>
+            <div class="testimonial-review-card" aria-hidden="true">
+              <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=80&q=80" alt="" class="reviewer-img"/>
+              <p>"The Butter Chicken gravy was so rich and flavourful — I mopped every last drop with naan. Perfection!"</p>
+              <div class="reviewer-name">Vikram R.</div>
+              <div class="stars"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+            </div>
+            <div class="testimonial-review-card" aria-hidden="true">
+              <img src="https://images.unsplash.com/photo-1519345182560-3f2917c472ef?w=80&q=80" alt="" class="reviewer-img"/>
+              <p>"From the warm decor to the Gulab Jamun, ZaikaCafé is pure desi soul. I keep coming back for more!"</p>
+              <div class="reviewer-name">Meera T.</div>
+              <div class="stars"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+            </div>
+          </div>
+        </div><!-- /.testimonials-overflow -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== RESERVATION ===== -->
+  <section class="reservation section" id="reservation">
+    <div class="reservation-bg-img">
+      <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1400&q=60" alt="Restaurant background" />
+      <div class="reservation-overlay"></div>
+    </div>
+    <div class="container reservation-inner">
+      <div class="reservation-text" data-aos="fade-right">
+        <span class="section-label light">Reservations</span>
+        <h2 class="section-title light">Book Your Table<br>Today</h2>
+        <p class="reservation-desc">Reserve your spot and let us prepare an unforgettable dining experience for you and your loved ones.</p>
+        <div class="reservation-info">
+          <div class="res-info-item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#D4A843" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 11.5a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 8.91a16 16 0 0 0 5.91 5.91l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <span>+91 98765 43210</span>
+          </div>
+          <div class="res-info-item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#D4A843" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <span>hello@zaikacafe.in</span>
+          </div>
+          <div class="res-info-item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#D4A843" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            <span>Mon–Sun: 8:00 AM – 10:00 PM</span>
+          </div>
+        </div>
+      </div>
+      <div class="reservation-form-wrap" data-aos="fade-left">
+        <form class="reservation-form" id="reservationForm">
+          <div class="form-row">
+            <div class="form-group">
+              <input type="text" placeholder="Your Name" required />
+            </div>
+            <div class="form-group">
+              <input type="tel" placeholder="Phone Number" required />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <select>
+                <option>1 Person</option>
+                <option>2 Persons</option>
+                <option>3 Persons</option>
+                <option>4 Persons</option>
+                <option>5+ Persons</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <input type="date" id="reservationDate" />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <select>
+                <option>08:00 AM</option>
+                <option>09:00 AM</option>
+                <option>10:00 AM</option>
+                <option>12:00 PM</option>
+                <option>01:00 PM</option>
+                <option>06:00 PM</option>
+                <option>07:00 PM</option>
+                <option>08:00 PM</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <input type="email" placeholder="Email Address" />
+            </div>
+          </div>
+          <div class="form-group full">
+            <textarea placeholder="Special Request (optional)" rows="3"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">
+            Book Now <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m7 17 10-10M7 7h10v10"/></svg>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== NEWSLETTER ===== -->
+  <section class="newsletter section">
+    <div class="container newsletter-inner">
+      <div class="newsletter-icon"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#2B5F3E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg></div>
+      <h2>Subscribe to our<br><span class="accent">newsletter</span></h2>
+      <p>Be the first to know — get fresh updates, special offers, and insider news straight to your inbox.</p>
+      <form class="newsletter-form" id="newsletterForm">
+        <input type="email" placeholder="Enter your email" required />
+        <button type="submit" class="btn btn-primary">Subscribe</button>
+      </form>
+      <div class="newsletter-social">
+        <a href="#" aria-label="Facebook"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+        <a href="#" aria-label="WhatsApp"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.944 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg></a>
+        <a href="#" aria-label="Instagram"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+        <a href="#" aria-label="LinkedIn"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" id="contact">
+    <div class="footer-bg-img">
+      <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1400&q=40" alt="Footer background" />
+      <div class="footer-overlay"></div>
+    </div>
+    <div class="container footer-inner">
+      <div class="footer-logo-col">
+        <a href="#" class="logo">
+          <div class="logo-icon">
+            <svg width="38" height="38" viewBox="0 0 38 38" fill="none"><circle cx="19" cy="19" r="19" fill="#2B5F3E"/><path d="M12 24 Q15 14 19 12 Q23 14 26 24" stroke="#D4A843" stroke-width="2" fill="none" stroke-linecap="round"/><ellipse cx="19" cy="26" rx="7" ry="3" fill="#D4A843" opacity="0.9"/></svg>
+          </div>
+          <span class="logo-text">Zaika<strong>Café</strong></span>
+        </a>
+        <p class="footer-tagline">Authentic desi flavours, crafted with love in every single bite.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact Us</h4>
+        <div class="footer-contact">
+          <div class="footer-contact-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            hello@zaikacafe.in
+          </div>
+          <div class="footer-contact-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 11.5a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 8.91a16 16 0 0 0 5.91 5.91l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            +91 98765 43210
+          </div>
+        </div>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="#" aria-label="WhatsApp"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.944 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+          <a href="#" aria-label="LinkedIn"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Our Gallery</h4>
+        <div class="footer-gallery">
+          <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=200&q=70" alt="Gallery 1" />
+          </div>
+          <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1588166524941-3bf61a9c41db?w=200&q=70" alt="Gallery 2" />
+          </div>
+          <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?w=200&q=70" alt="Gallery 3" />
+          </div>
+        </div>
+        <div class="gallery-nav">
+          <button class="nav-arrow" aria-label="Previous gallery"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg></button>
+          <button class="nav-arrow" aria-label="Next gallery"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg></button>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Address</h4>
+        <address class="footer-address">
+          42 Linking Road, Bandra (W),<br>
+          Mumbai 400050,<br>
+          Maharashtra, India.
+        </address>
+        <div class="footer-links">
+          <a href="#home">Home</a>
+          <a href="#menu">Menu</a>
+          <a href="#about">About Us</a>
+          <a href="#services">Services</a>
+          <a href="#reservation">Book Table</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="footer-divider"></div>
+        <p>Copyright © 2026. All rights reserved — <strong>ZaikaCafé</strong></p>
+        <p class="agency-credit">Made with <span class="credit-heart">♥</span> by <a href="https://nexaxotics.vercel.app" target="_blank" rel="noopener noreferrer" class="agency-link">NEXAXOTICS AGENCY</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="toast"></div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
